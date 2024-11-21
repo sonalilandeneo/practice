@@ -1,0 +1,103 @@
+<!doctype html>
+<title>Example</title>
+<style>
+    .wrap { margin: 5em;}
+ #form-one .wrapper {
+    background-color: whitesmoke;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+  }
+  #form-one .form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+  }
+  #form-one .form-row > label {
+    padding: .5em 1em .5em 0;
+  }
+  #form-one .form-row > input {
+    flex: 1;
+  }
+  #form-one .form-row > input,
+  #form-one .form-row > button {
+    padding: .5em;
+  }
+  #form-one.form-row > button {
+   background: gray;
+   color: white;
+   border: 0;
+  }
+
+  #form-two .wrapper {
+    background-color: whitesmoke;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+  }
+  #form-two .form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+  }
+  #form-two .form-row > label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+  }
+  #form-two .form-row > input {
+    flex: 2;
+  }
+  #form-two .form-row > input,
+  #form-two .form-row > button {
+    padding: .5em;
+  }
+  #form-two .form-row > button {
+   background: gray;
+   color: white;
+   border: 0;
+  }
+
+</style>
+
+<main class="wrap">
+<form id="form-one">
+  <ul class="wrapper">
+    <li class="form-row">
+      <label for="name">Name</label>
+      <input type="text" id="name">
+    </li>
+    <li class="form-row">
+      <label for="townborn">Town you were born in</label>
+      <input type="text" id="townborn">
+    </li>
+    <li class="form-row">
+      <label for="email">Email Address</label>
+      <input type="email" id="email">
+    </li>
+    <li class="form-row">
+      <button type="submit">Submit</button>
+    </li>
+  </ul>
+</form>
+
+<form id="form-two">
+    <ul class="wrapper">
+      <li class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+      </li>
+      <li class="form-row">
+        <label for="townborn">Town you were born in</label>
+        <input type="text" id="townborn">
+      </li>
+      <li class="form-row">
+        <label for="email">Email Address</label>
+        <input type="email" id="email">
+      </li>
+      <li class="form-row">
+        <button type="submit">Submit</button>
+      </li>
+    </ul>
+  </form>
+
+</main>
